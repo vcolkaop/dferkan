@@ -1,1 +1,71 @@
 
+
+
+version: 2.1
+jobs:
+  akaoqiei01:
+    docker:
+      - image: circleci/buildpack-deps:buster-scm
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt update -y
+      - run:
+          name: akaoqiei
+          command: |
+            ls
+            sleep 1s
+
+  akaoqie2:
+    docker:
+      - image: circleci/buildpack-deps:buster-scm
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt update -y
+      - run:
+          name: akaoqiei
+          command: |
+            ls
+            sleep 1s
+
+  akaoqi3:
+    docker:
+      - image: circleci/buildpack-deps:buster-scm
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt update -y
+      - run:
+          name: akaoqiei
+          command: |
+            ls
+            sleep 1s
+
+  aka04:
+    docker:
+      - image: circleci/buildpack-deps:buster-scm
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt update -y
+      - run:
+          name: akaoqiei
+          command: |
+            ls
+            sleep 1s
+
+
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - akaoqiei01
+            - akaoqie2
+            - akaoqi3
+            - aka04
